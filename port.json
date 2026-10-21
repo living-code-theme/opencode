@@ -1,0 +1,28 @@
+{
+  "$schema": "https://living-code.dev/port.schema.json",
+  "schemaVersion": 1,
+  "name": "OpenCode",
+  "slug": "opencode",
+  "group": "AI & Agents",
+  "emoji": "🔓",
+  "description": "Living Code for OpenCode TUI: complete native JSON palettes for UI, Markdown, syntax highlighting, selections and review diffs.",
+  "homepage": "https://opencode.ai",
+  "quick": "Install the native theme files",
+  "aliases": [
+    "open code",
+    "opencode tui"
+  ],
+  "flavors": [
+    "night",
+    "frost",
+    "paper",
+    "signal"
+  ],
+  "files": [
+    "themes/living-code-night.json",
+    "themes/living-code-frost.json",
+    "themes/living-code-paper.json",
+    "themes/living-code-signal.json"
+  ],
+  "images": []
+}

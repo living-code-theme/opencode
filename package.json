@@ -1,0 +1,30 @@
+{
+  "name": "living-code-opencode",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Living Code for OpenCode TUI: complete native JSON palettes for UI, Markdown, syntax highlighting, selections and review diffs.",
+  "license": "MIT",
+  "author": "Living Code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/living-code-theme/opencode.git"
+  },
+  "homepage": "https://living-code.dev/ports/opencode/",
+  "packageManager": "pnpm@12.9.0",
+  "engines": {
+    "node": ">=22.22"
+  },
+  "livingCode": {
+    "kind": "files"
+  },
+  "scripts": {
+    "build": "node scripts/generate.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs && node --test test/*.test.mjs",
+    "check:generated": "node scripts/generate.mjs --check",
+    "palette:update": "node scripts/update-palette.mjs",
+    "package": "node scripts/package.mjs"
+  },
+  "devDependencies": {}
+}
