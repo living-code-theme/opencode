@@ -1,0 +1,8 @@
+{
+  "downloads": [
+    {
+      "source": "themes/living-code-{flavor}.json",
+      "destination": "{config}/opencode/themes/living-code-{flavor}.json"
+    }
+  ]
+}

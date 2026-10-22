@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "scene": "OpenCode native TUI with an isolated configuration. No model request.",
+  "versionCommand": [
+    "opencode",
+    "--version"
+  ],
+  "fixtures": []
+}
