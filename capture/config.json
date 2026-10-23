@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "scene": "OpenCode native TUI with an isolated configuration. No model request.",
+  "scene": "OpenCode native session view and syntax highlighting, importing a labeled local code-review demo. No model request or user credentials.",
   "versionCommand": [
     "opencode",
     "--version"
   ],
-  "fixtures": []
+  "fixtures": ["capture/review.md"]
 }

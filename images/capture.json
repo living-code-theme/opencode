@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
-  "scene": "OpenCode native TUI with an isolated configuration. No model request.",
+  "scene": "OpenCode native session view and syntax highlighting, importing a labeled local code-review demo. No model request or user credentials.",
   "inputs": {
-    "capture/app.py": "0edf0fe0e6eec7d4216f6f895561779116a73bca5b6e4ac3b97e2280b531f19a",
-    "capture/config.json": "cc22ea0d328ec6b918ce54c3cace0a3f001c7fb8274cc44176a2a55028c89447",
+    "capture/app.py": "f080ee7653bd6b33f59f6798c40fb26d377aee596528587ef379b870df56c52f",
+    "capture/config.json": "650245338e10d530f0b16a3aaa341de139b8bdacec82e3a21bdb1a89709d488f",
     "capture/flake.lock": "e3750f7ba25d0b1971722cdd83b2f07e32528980a4d6a9a1ea55177747de5752",
-    "capture/flake.nix": "19a09c02dbc2e539dcad812b4ef7f6413020889211f08cacee7bc2aebbc04f6d",
+    "capture/flake.nix": "cd268ad3314819ddf669060444d6d3088f086b0d9905f43da3b76a36d8902f80",
+    "capture/review.md": "eab4a3ae509f01d72a9370f877cb7d69ceeb5418ad23645f465d9182d47f41ab",
     "palette/theme.json": "d735cf005e3b2807953226c0119e384f6f8a3d2b3167443371cb302a8c689cdb",
     "port.json": "5de53c32b200c324b65609c7f3381684bc3be37c09a89757a6faeecf7bfc2666",
-    "scripts/capture.py": "1fefb763f00567b795b92388b29e3e8c3fd58bd0eefa9c2f31e43663cad7a308",
+    "scripts/capture.py": "ea56b3784525095d9175887431004ce5df674f17b45c7e5a8d0399aa68615c33",
     "themes/living-code-frost.json": "0b2e3a8d9ac4dcc7d818612bf0ad5dab46e116a1ab448330526a5c7440cf2bf8",
     "themes/living-code-night.json": "c7a659992f04e1268c8befe31b0a9641ccbe89d99ee463a1d2bd1a0b76196470",
     "themes/living-code-paper.json": "9064766cb6da2440724c22a251a00bc370d10497f85c977af06fe402916301b2",
@@ -17,49 +18,83 @@
   "images": {
     "night": {
       "path": "images/night.png",
-      "sha256": "efc510499a41919fd9567ffa7f37e48c8c86948279d6729f9d924e531595b889",
+      "sha256": "756af7c73492f588b20031bd4f3a0f11799e80c83ad6828ca3cc4e5a976281cd",
       "application": "1.19.0",
       "paletteColors": [
         "#00a692",
         "#05080b",
         "#090e11",
+        "#12171a",
+        "#50565b",
+        "#52d7c1",
+        "#747c80",
+        "#80b6d3",
+        "#8acb83",
+        "#9ae0dd",
         "#9ba0a2",
-        "#e2e9ee"
+        "#e18c5f",
+        "#e2e9ee",
+        "#e96560",
+        "#f0be6d"
       ]
     },
     "frost": {
       "path": "images/frost.png",
-      "sha256": "283f1deb2a8096e0f8fa880b67da2d7b3a6353f82e1ad7332819fa75c319ab82",
+      "sha256": "88b8de668f3189e8ecd9776e0410cc7eb8efa95273468a1ac31d7eb82f34e842",
       "application": "1.19.0",
       "paletteColors": [
         "#0a1016",
         "#10171c",
+        "#171e24",
         "#43a997",
+        "#50565b",
+        "#7d8489",
+        "#8ad5c6",
+        "#98bacd",
         "#9ba0a2",
-        "#e2e9ee"
+        "#a2cb9d",
+        "#b6e2df",
+        "#d49c80",
+        "#d68079",
+        "#e2e9ee",
+        "#e9c897"
       ]
     },
     "paper": {
       "path": "images/paper.png",
-      "sha256": "a42447c20285dc3d46b47531dec8f6013fe991a65819956eeed3819b65f276da",
+      "sha256": "24084dec2a7bc671a79b5b73c2acace2c645979d0d5174daeea58113a64a5d7c",
       "application": "1.19.0",
       "paletteColors": [
+        "#0f695e",
         "#12171a",
         "#187d6e",
+        "#1f7074",
+        "#2b6991",
+        "#3b7a35",
         "#50565a",
+        "#6b7378",
+        "#8f6213",
+        "#92999f",
+        "#a04f27",
+        "#a74541",
+        "#e3e9ed",
         "#ebeff2",
         "#f4f7f9"
       ]
     },
     "signal": {
       "path": "images/signal.png",
-      "sha256": "9cd1945bf268bbc86c30c0ed9203da6cb9c9ff24246613734be567ffef23c075",
+      "sha256": "db751711aebe6cacb29ee1d7c706bec533dd2070cddc29e51ce5de9aceb89ad2",
       "application": "1.19.0",
       "paletteColors": [
         "#00a692",
         "#05080b",
         "#090e11",
+        "#12171a",
+        "#50565b",
+        "#747c80",
         "#9ba0a2",
+        "#c8cfd4",
         "#e2e9ee"
       ]
     }

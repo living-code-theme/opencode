@@ -98,11 +98,13 @@ Choose `living-code-signal` with `/theme`, or set `"theme": "living-code-signal"
 
 The files use the OpenCode v1 `{ "theme": { … } }` JSON format. They provide every required color, explicit selected-item text and menu backgrounds. Every flavor is a separate theme, so Paper stays light even in a dark terminal. Put configuration in `tui.json`, not in the theme file; preserve any existing keybindings.
 
+All nine exposed `syntax*` colors follow the matching [Living Code Neovim](https://github.com/living-code-theme/nvim/blob/main/lua/living-code/highlights.lua) roles in every flavor. Tests compare native theme files against a pinned Neovim reference, not just UI accents. Token recognition and finer-grained mappings remain OpenCode’s responsibility. In OpenCode 1.19.0, `getSyntaxRules` also hardwires builtin scopes to the UI error color, constant identifiers to `syntaxNumber`, and parameters to `syntaxVariable`. Those couplings cannot all match Neovim’s distinct builtin, variable and parameter roles through the native nine-token API. This port verifies the exposed roles, not exact per-token parity that the application cannot express.
+
 ## Compatibility
 
 Targets the TUI theme format verified against OpenCode 1.19.0. This is not the web/desktop theme format. Truecolor gives the intended colors; reduced-color terminals approximate them. OpenCode 2 theme documents are a different API and are not claimed here. Syntax, Markdown and diff color contracts are checked independently of generation.
 
-Previews are captured programmatically from the actual application in an isolated profile. See [`capture/app.py`](capture/app.py) for the app-owned recipe and [`images/capture.json`](images/capture.json) for runtime, palette and image provenance. No mock interface is drawn.
+Previews are captured programmatically from the actual application in an isolated profile. See [`capture/app.py`](capture/app.py) for the app-owned recipe and [`images/capture.json`](images/capture.json) for runtime, palette and image provenance. No mock interface is drawn. The conversation is a labeled, repository-owned local demo, not a private session or a live model response. Recapturing needs no account, subscription or paid API call.
 
 ## Contributing
 
